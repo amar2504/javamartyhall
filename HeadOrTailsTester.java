@@ -8,6 +8,7 @@ public class HeadOrTailsTester {
 	//	for (int i=0; i<a.length; i++)
 		//	System.out.println(a[i]);
 		
+// this is the way to initialize the array with size 5.
 		int [] arr = new int[5];
 		for (int i=0; i<arr.length; i++)
 		{
