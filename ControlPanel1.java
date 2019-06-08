@@ -1,10 +1,12 @@
 package assignmentEventHandling;
 
 import java.awt.Color;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.JPanel;
 
-public class ControlPanel1 extends JPanel {
+public class ControlPanel1 extends JPanel implements MouseListener {
 	/**
 	 * 
 	 */
@@ -12,7 +14,7 @@ public class ControlPanel1 extends JPanel {
 
 	public ControlPanel1() {
 		setBackground(Color.RED);
-		addMouseListener(new mouseeffect(this));		
+		addMouseListener(this);		
 	}
 	
 	public void swapColors() {
@@ -20,5 +22,36 @@ public class ControlPanel1 extends JPanel {
 			setBackground(Color.YELLOW);
 		else
 			setBackground(Color.RED);
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		this.swapColors();
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }
